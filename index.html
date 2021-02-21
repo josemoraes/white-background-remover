@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.3/tailwind.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <title>White Background Image Remover</title>
+  <style type="text/css">
+    html, body{
+      font-family: 'DotGothic16', sans-serif;
+    }
+  </style>  
+</head>
+<body class="w-screen h-screen flex flex-col justify-start items-center bg-blue-300">
+  <header class="mt-10 mb-10">
+    <h1 class="text-5xl font-extrabold">White Background Remover</h1>
+  </header>
+  <form action="#" id="image-form" enctype="multipart/form-data" class="border-2">
+    <input type="file" name="image-input" id="image-input" class="w-0 h-0">
+    <label for="image-input" id="image-label" class="cursor-pointer pl-16 pr-16">Click here to image upload</label>
+    <button class="pt-2 pb-2 pl-10 pr-10 bg-gray-400 hover:bg-blue-200 transition-all duration-300" type="submit">Remove Background</button>
+  </form>
+  <div id="preview-section" class="mt-10">
+    <div class="preview-original-image"></div>
+    <canvas id="canvas"></canvas>
+  </div>
+  <a id="download-button" download="image-with-removed-white-bg.png" class="fixed right-10 top-12 bg-yellow-300 hover:bg-yellow-400 cursor-pointer transition-all duration-300 pl-12 pr-12 pt-10 pb-10 shadow">
+    <span type="button" class="text-2xl uppercase">Download</span>
+    <span class="icon-arrow-down-circle text-2xl"></span>
+  </a>
+  <script src="./main.js"></script>
+</body>
+</html>
