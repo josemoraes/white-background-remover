@@ -5,8 +5,8 @@ This app doesn't has the intention of being a sophisticated image processor, and
 
 # User stories
 
-- [ ] User can upload an image;
-- [ ] When the user clicks on the button, the canvas with the uploaded image must be generated and a download button must be on available;
+- [x] User can upload an image;
+- [x] When the user clicks on the button, the canvas with the uploaded image must be generated and a download button must be on available;
 
 # Extra info
 * **Author**: José Carlos de Moraes Filho
