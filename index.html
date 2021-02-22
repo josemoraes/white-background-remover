@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
   <title>White Background Image Remover</title>
+  <meta name="description" content="An easy and fast way to remove the white background from an image and delivery a PNG image as result.">
+  <meta name="keywords" content="white, background, remover, easy, fast, PNG">
   <style type="text/css">
     html, body{
       font-family: 'DotGothic16', sans-serif;
@@ -25,8 +27,9 @@
   </script>
 </head>
 <body class="w-screen h-screen flex flex-col justify-start items-center bg-blue-300">
-  <header class="mt-10 mb-10">
+  <header class="mt-10 mb-10 text-center">
     <h1 class="text-5xl font-extrabold">White Background Remover</h1>
+    <h2 class="leading-8 mt-2 max-w-xl">An easy and fast way to remove the white background from an image and delivery a PNG image as result</h2>
   </header>
   <form action="#" id="image-form" enctype="multipart/form-data" class="border-2">
     <input type="file" name="image-input" id="image-input" class="w-0 h-0">
@@ -41,6 +44,6 @@
     <span type="button" class="text-2xl uppercase">Download</span>
     <span class="icon-arrow-down-circle text-2xl"></span>
   </a>
-  <script src="./main.js"></script>
+  <script src="./main.min.js"></script>
 </body>
 </html>
